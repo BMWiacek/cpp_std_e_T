@@ -28,6 +28,7 @@ void set_time(time_t new_time)
 {
 }
 
+
 static int zeroMethod()
 {
     return 0;
@@ -45,4 +46,3 @@ static void assignRemainderOfVar()
     int b = 0;
     a %= b; // VIOLATION BD-PB-ZERO
 }
-
