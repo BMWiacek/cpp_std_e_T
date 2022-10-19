@@ -27,3 +27,22 @@ void display_time()
 void set_time(time_t new_time)
 {
 }
+
+
+static int zeroMethod()
+{
+    return 0;
+}
+
+static void assignmentRemainderOfMethodResult()
+{
+    int z = 5;
+    z %= zeroMethod(); // VIOLATION BD-PB-ZERO
+}
+
+static void assignRemainderOfVar()
+{
+    int a = 5;
+    int b = 0;
+    a %= b; // VIOLATION BD-PB-ZERO
+}
